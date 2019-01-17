@@ -10,6 +10,9 @@
 >git clone "url repo"
 
 ## **Command Tambahan** ##
+Cek status, nanti bakal ditampilin apa yg udah diubah di repo lokal PC.
+>git status
+--------------------------------------------------------------------------
 Commit upload, untuk sync file yg udah diubah, terus diupload ke repo.
 Bagian "comment" diisi komentar apapun, biasanya diisi apa yg udah diubah.
 >git commit -m "comment"
