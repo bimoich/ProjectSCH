@@ -1,8 +1,6 @@
 # ProjectSCH #
-Repository
 
 ## Cara Clone Repo ##
-[Download Link] (https://git-scm.com/download/win)
 - Pilih folder buat sync ke repo
 - klik kanan, pilih "Git Bash Here"
 - masukin koding dibawah:
