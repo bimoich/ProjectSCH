@@ -1,6 +1,6 @@
-# ProjectSCH #
+#** ProjectSCH **#
 
-## Cara Clone Repo ##
+##** Cara Clone Repo **##
 [Download Link](https://git-scm.com/download/win)
 - Pilih folder buat sync ke repo
 - klik kanan, pilih "Git Bash Here"
@@ -9,7 +9,7 @@
 
 >git clone "url repo"
 
-## Command Tambahan ##
+##** Command Tambahan **##
 Commit upload, untuk sync file yg udah diubah, terus diupload ke repo.
 Bagian "comment" diisi komentar apapun, biasanya diisi apa yg udah diubah.
 >git commit -m "comment"
