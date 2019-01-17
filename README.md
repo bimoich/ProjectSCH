@@ -15,7 +15,7 @@ Cek status, nanti bakal ditampilin apa yg udah diubah di repo lokal PC.
 --------------------------------------------------------------------------
 Commit upload, untuk sync file yg udah diubah, terus diupload ke repo.
 Bagian "comment" diisi komentar apapun, biasanya diisi apa yg udah diubah.
->git commit -m "comment"
+>git commit -am "comment"
 ---------------------------------------------------------------------------
 Eksekusi upload, masukin kode ini setelah git commit.
 >git push
