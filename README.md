@@ -1,6 +1,6 @@
 # **ProjectSCH** #
 
-## **Cara Clone Repo** ##
+## **Cara Clone Repo (via command line, bukan GUI)** ##
 [Download Link](https://git-scm.com/download/win)
 - Pilih folder buat sync ke repo
 - klik kanan, pilih "Git Bash Here"
