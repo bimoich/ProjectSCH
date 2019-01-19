@@ -27,9 +27,7 @@ Serial.begin(9600);
 }
 
 void loop() {
-  // Check WiFi Status
-  
-    
+  // Check WiFi Status    
     if ( ! mfrc522.PICC_IsNewCardPresent()) 
     {
     return;
