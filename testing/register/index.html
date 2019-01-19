@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration Form </title>
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.validate.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#registrasiForm").validate({
+	messages: {
+		email: {
+			required: "E-mail harus diisi.",
+			email: "Masukkan email yang valid."
+		},
+		jk: {
+			required: "Pilih salah satu."
+		}
+	},
+	errorPlacement: function(error, element){
+		error.appendTo(element.parent("td"));
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<center>
+<div id="center" style="margin:20px auto; border:1px solid #ccc; width:500px;">
+<h4> Student Registration Form </h4>
+<form id="registrasiForm" method="post" action="proses.php">
+	<table>
+	<tr>
+	 <td colspan="2">
+	 <input name="nama" title="Nama harus diisi." type="text" placeholder="Nama" required />
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <input name="NIS" title="NIS harus diisi." type="text" placeholder="NIS" required />
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <input name="email" type="email" placeholder="E-mail" required />
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <input name="tgl_lahir" title="Tanggal lahir harus diisi." type="text" placeholder="Tanggal Lahir (DD/MM/YYY)" maxlength="10" required />
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <textarea name="alamat" title="Alamat harus diisi." type="text" placeholder="Alamat" required /></textarea>
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <input name="no_telp" title="No. telepon harus diisi." type="text" placeholder="Telepon" required />
+	 </td>
+	</tr>
+	<tr>
+	 <td colspan="2">
+	 <input name="jk" value="L" type="radio" required/>Laki-laki
+	 <input name="jk" value="P" type="radio">Perempuan
+	 </td>
+	</tr>
+	<tr>
+	<td>
+	<select name="fakultas" title="Fakultas harus dipilih." required/>
+		<option value="">== Pilih Fakultas ==</option>
+		<option value="1">FIKTI</option>
+		<option value="2">FE</option>
+		<option value="3">FIB</option>
+		<option value="4">FT</option>
+		<option value="5">FK</option>
+	 </select>
+	 </td>
+	 </tr>
+	 <tr>
+	 <td>
+	 <select name="jurusan" title="Jurusan harus dipilih." required/>
+		<option value="">== Pilih Jurusan ==</option>
+		<option value="1">Sistem Komputer</option>
+		<option value="2">Manajemen</option>
+		<option value="3">Sastra Inggris</option>
+		<option value="4">Teknik Industri</option>
+		<option value="5">Kedokteran Gigi</option>
+	 </select>
+	 </td>
+	 </tr>
+	 <tr>
+	 <td colspan="2">
+	 <input type="submit" value="Submit Data"/>
+	 <input type="reset" value="Reset"/>
+	 </td>
+	 </tr>
+	 </table>
+	 </form>
+	 </div>
+	 </center>
+	 </body>
+	 </html>
+	
+	 
+	 
+	 
+	 
