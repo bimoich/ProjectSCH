@@ -63,20 +63,24 @@ void loop() {
     int httpCode = http.GET();
     //Check the returning code                                                                  
     if (httpCode > 0) {
-      Serial.println("Konek Cuy");
       const size_t bufferSize = JSON_OBJECT_SIZE(1);
       DynamicJsonBuffer jsonBuffer(bufferSize);
       JsonObject& root = jsonBuffer.parseObject(http.getString());
       // Parameters
       String Status = root["sts"]; 
-      String sepeda =  root["id_sepeda"];
-      Serial.println(Status);
-
+      if (Status == "success"){
+        Serial.println("Absen berhasil");
+      }
+      else if (Status == "double"){
+        Serial.println("Sudah absen hari ini");
+      }
+      else if (Status == "unknown"){
+        Serial.println("Kartu tidak terdaftar");
+      }
     }
     http.end();
     id="";
     }//Close connection
   }
   delay(3000);
-  
 }
