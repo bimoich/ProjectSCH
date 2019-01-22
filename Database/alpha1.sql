@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 22, 2019 at 02:25 PM
+-- Generation Time: Jan 22, 2019 at 04:54 PM
 -- Server version: 10.1.37-MariaDB-0+deb9u1
 -- PHP Version: 7.0.33-0+deb9u1
 
@@ -76,19 +76,23 @@ CREATE TABLE `Data_Siswa` (
   `NIS` int(10) NOT NULL,
   `rfid` varchar(12) NOT NULL,
   `Nama` varchar(30) NOT NULL,
+  `jenis_kelamin` varchar(2) NOT NULL,
   `Kelas` varchar(10) NOT NULL,
   `alamat` text NOT NULL,
-  `No Telpon Orang Tua` int(15) NOT NULL
+  `tlp_ortu` int(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `Data_Siswa`
 --
 
-INSERT INTO `Data_Siswa` (`nomer_id`, `NIS`, `rfid`, `Nama`, `Kelas`, `alamat`, `No Telpon Orang Tua`) VALUES
-(1, 291145, 'E1648411', 'icad', '10A', '', 0),
-(2, 221141, '', 'Bimo Ichmu AM', '10X', '', 21021021),
-(3, 231212, '', 'Bang Sat Rio', '10J', '', 88718311);
+INSERT INTO `Data_Siswa` (`nomer_id`, `NIS`, `rfid`, `Nama`, `jenis_kelamin`, `Kelas`, `alamat`, `tlp_ortu`) VALUES
+(1, 291145, 'E1648411', 'icad', '', '10A', '', 0),
+(2, 221141, '', 'Bimo Ichmu AM', '', '10X', '', 21021021),
+(3, 231212, '', 'Bang Sat Rio', '', '10J', '', 88718311),
+(4, 0, '', '', '', '', '', 0),
+(5, 3, '', 'Bimo Ichmu AM', 'L', '3', 'Jl. H. Sanusi 1 No.35, RT001, Kelurahan Sukarame, Kecamatan Sukarame, Bandar Lampung.', 3),
+(6, 3, '', 'Bimo Ichmu AM', 'L', '3', 'Jl. H. Sanusi 1 No.35, RT001, Kelurahan Sukarame, Kecamatan Sukarame, Bandar Lampung.', 3);
 
 -- --------------------------------------------------------
 
@@ -148,7 +152,7 @@ ALTER TABLE `absensi`
 -- AUTO_INCREMENT for table `Data_Siswa`
 --
 ALTER TABLE `Data_Siswa`
-  MODIFY `nomer_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `nomer_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

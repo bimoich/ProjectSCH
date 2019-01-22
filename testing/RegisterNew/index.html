@@ -4,8 +4,8 @@
 <title> Registration Form </title>
 <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery.validate.js"></script>
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/jquery.validate.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -15,7 +15,7 @@ $("#registrasiForm").validate({
 			required: "NIS harus diisi.",
 			NIS: "Masukkan NIS yang valid."
 		},
-		jk: {
+		Jenis_Kelamin: {
 			required: "Pilih salah satu."
 		}
 	},
@@ -31,7 +31,7 @@ $("#registrasiForm").validate({
 <center>
 <div id="center" style="margin:20px auto; border:1px solid #ccc; width:500px;">
 <h4> Student Registration Form </h4>
-<form id="registrasiForm" method="post" action="proses.php">
+<form id="registrasiForm" method="post" action="lib/proses.php">
 	<table>
 	<tr>
 	 <td colspan="2">
