@@ -74,6 +74,9 @@ $("#registrasiForm").validate({
 	 </form>
 	 </div>
 	 </center>
+	 <?php if (isset($_GET['Message'])) {
+    print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+	} ?>
 	 </body>
 	 </html>
 	
